@@ -30,7 +30,7 @@ public class SalvoSaveSaviano : MonoBehaviour {
             SaveAEO jogadorcarregado = JsonUtility.FromJson<SaveAEO>(saveaeo.GetComponent<SaveAEO>().caminho);
             Vector3 posicao = new Vector3();
             posicao.x = saveaeo.GetComponent<SaveAEO>().aEEE.xposition;
-            Instantiate(player,, Quaternion.identity);
+            Instantiate(player);
         }
         
     }
